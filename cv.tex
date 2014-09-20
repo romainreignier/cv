@@ -1,4 +1,4 @@
-%%% LaTeX Template: Designer's CV
+	%%% LaTeX Template: Designer's CV
 %%%
 %%% Source: http://www.howtotex.com/
 %%% Feel free to distribute this template, but please keep the referal to HowToTeX.com.
@@ -73,10 +73,9 @@
 	{\Large\textbf{#1}\par
 	\SmallSep\normalsize\normalfont}
 
-\newcommand{\CVItem}[1]
-	{\textbf{\color{RoyalBlue} #1}}
-
-
+\newcommand{\CVItem}[2]
+	{\textbf{\color{RoyalBlue} #1} - {\small\color{black}#2}\normalsize\normalfont}
+	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Begin document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -86,96 +85,100 @@
 %%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 	\hfill
-	\includegraphics[width=0.6\columnwidth]{photo}
+	\includegraphics[width=0.6\columnwidth]{IMG_7936-Modifier_cv}
 	\vspace{-7cm}
 \end{figure}
 
 \begin{flushright}\small
-	Johnathan S. Doe \\
-	\url{jdoe@howtotex.com}  \\
-	\url{www.howtotex.com} \\
-	(555) 555-3333
+	Romain \textsc{Reignier} \\
+	\url{romain.reignier@edu.supmeca.fr}  \\
+	+33609521618 \\
+	23 years old
 \end{flushright}\normalsize
 \framebreak
 
 
 % Right frame
 %%%%%%%%%%%%%%%%%%%%
-\Huge\bfseries {\color{RoyalBlue} John Doe} \\
-\Large\bfseries  Graphics designer \\
+\Huge\bfseries {\color{RoyalBlue} Romain \textsc{Reignier}} \\
+\Large\bfseries  Student in Mechanical \& Robotics Engineering \\
 
 \normalsize\normalfont
 
 % About me
 \begin{AboutMe}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
+A young man a bit crazy !
 \end{AboutMe}
-
-% Experience
-\CVSection{Experience}
-\CVItem{May 2010 - present, Lorem ipsum}\\
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla.
-\SmallSep
-
-\CVItem{Aug 2007 - Feb 2010, Vivamus vel}\\
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus.
-\Sep
 
 % Education
 \CVSection{Education}
-\CVItem{2010 - present, Lorem ipsum dolor}\\
-MSc. Lorem ipsum, Cras sollicitudin
+\CVItem{2012 - present, Supmeca Engineering School}{Toulon}\\
+An engineering course focusing in mechanics, with Robotics and Mecatronics.
 \SmallSep
 
-\CVItem{2007 - 2010, Lorem ipsum dolor}\\
-MSc. Lorem ipsum, Cras sollicitudin
+\CVItem{2013 - present, University of Toulon}{Toulon}\\
+Master Degree on Command \& Vision.
 \SmallSep
 
-\CVItem{2005 - 2007, Vivamus vel bibendum}\\
-Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla.
-\Sep
-
-% Skills
-\CVSection{Skills}
-\CVItem{Platforms}
-\begin{multicols}{3}
-\begin{compactitem}[\color{RoyalBlue}$\circ$]
-	\item Lorem 
-	\item Ipsum 
-\end{compactitem}
-\end{multicols}
-\SmallSep
-
-\CVItem{Computer software}
-\begin{multicols}{3}
-\begin{compactitem}[\color{RoyalBlue}$\circ$]
-	\item Lorem 
-	\item Ipsum 
-	\item Dolor 
-	\item Sit 
-	\item Amet
-	\item Consectetur 
-	\item Adipiscing 
-	\item Elit
-	\item \ldots
-\end{compactitem}
-\end{multicols}
-\Sep 
-
-\CVSection{Something other}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
-
-\clearpage
-\framebreak
-\framebreak
-
-\CVSection{Something else}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
-\Sep
-
-% References
-\CVSection{References}
-References upon request.
+% \CVItem{2007 - 2010, Lorem ipsum dolor}\\
+% MSc. Lorem ipsum, Cras sollicitudin
+% \SmallSep
+% 
+% \CVItem{2005 - 2007, Vivamus vel bibendum}\\
+% Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla.
+% \Sep
+% 
+% % Experience
+% \CVSection{Experience}
+% \CVItem{May 2010 - present, Lorem ipsum}\\
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla.
+% \SmallSep
+% 
+% \CVItem{Aug 2007 - Feb 2010, Vivamus vel}\\
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus.
+% \Sep
+% 
+% % Skills
+% \CVSection{Skills}
+% \CVItem{Platforms}
+% \begin{multicols}{3}
+% \begin{compactitem}[\color{RoyalBlue}$\circ$]
+% 	\item Lorem 
+% 	\item Ipsum 
+% \end{compactitem}
+% \end{multicols}
+% \SmallSep
+% 
+% \CVItem{Computer software}
+% \begin{multicols}{3}
+% \begin{compactitem}[\color{RoyalBlue}$\circ$]
+% 	\item Lorem 
+% 	\item Ipsum 
+% 	\item Dolor 
+% 	\item Sit 
+% 	\item Amet
+% 	\item Consectetur 
+% 	\item Adipiscing 
+% 	\item Elit
+% 	\item \ldots
+% \end{compactitem}
+% \end{multicols}
+% \Sep 
+% 
+% \CVSection{Something other}
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
+% 
+% \clearpage
+% \framebreak
+% \framebreak
+% 
+% \CVSection{Something else}
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
+% \Sep
+% 
+% % References
+% \CVSection{References}
+% References upon request.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % End document
