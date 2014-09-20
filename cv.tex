@@ -27,7 +27,8 @@
 	\setlength{\multicolsep}{0pt}
 \usepackage{paralist}										% compact lists
 \usepackage{tikz}
-\usepackage{lipsum}	
+\usepackage{hyperref}
+\hypersetup{colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black} % pour mettre les liens en noirs, sans cadre
 \usepackage[english]{babel}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -105,7 +106,8 @@
 % Personnal Infos
 \begin{flushright}\small
 	Romain \textsc{Reignier} \\
-	\url{romain.reignier@edu.supmeca.fr}  \\
+	%\url{romain.reignier@edu.supmeca.fr}  \\
+	\href{mailto:romain.reignier@edu.supmeca.fr}{\nolinkurl{romain.reignier@edu.supmeca.fr}}\\
 	+33609521618 \\
 	23 years old
 \end{flushright}%\normalsize
@@ -185,10 +187,10 @@ Malaysia, Singapore, Togo, Netherlands, Germany, Czech Republic, Austria, Switze
 
 \normalsize\normalfont
 
-% % About me
-% \begin{AboutMe}
-% A young man a bit crazy !
-% \end{AboutMe}
+% About me
+\begin{AboutMe}
+Je veux faire des tracteurs :p
+\end{AboutMe}
 
 % Education
 \CVSection{Education}
