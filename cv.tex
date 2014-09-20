@@ -41,9 +41,9 @@
 
 % frame setup (flowfram package)
 % left frame
-\newflowframe{0.2\textwidth}{\textheight}{0pt}{0pt}[left]
+\newflowframe{0.27\textwidth}{\textheight}{0pt}{0pt}[left]
 	\newlength{\LeftMainSep}
-	\setlength{\LeftMainSep}{0.2\textwidth}
+	\setlength{\LeftMainSep}{0.26\textwidth}
 	\addtolength{\LeftMainSep}{1\columnsep}
  
 % small static frame for the vertical line
@@ -61,7 +61,7 @@
 % right frame
 \addtolength{\LeftMainSep}{1.5pt}
 \addtolength{\LeftMainSep}{1\columnsep}
-\newflowframe{0.7\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
+\newflowframe{0.68\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,19 +100,22 @@
 % Photo
 \begin{figure}
 	\hfill
-	\includegraphics[width=0.6\columnwidth]{IMG_7936-Modifier_cv}
+	\includegraphics[width=0.5\columnwidth]{IMG_7936-Modifier_cv}
 	\vspace{-0.5cm}
 \end{figure}
 
 % Personnal Infos
 \begin{flushright}\small
 	%Romain \textsc{Reignier} \\
-	%\url{romain.reignier@edu.supmeca.fr}  \\
-	\href{mailto:romain.reignier@edu.supmeca.fr}{\nolinkurl{romain.reignier@edu.supmeca.fr}}\\
-	+33609521618 \\
+	Avenue Georges Pompidou\\
+	Esterel 1\\
+	83160 La Valette du Var\\
+	{\footnotesize\href{mailto:romain.reignier@edu.supmeca.fr}{\nolinkurl{romain.reignier@edu.supmeca.fr}}}\\
+	+33 6 09 52 16 18\\
 	23 years old
 \end{flushright}%\normalsize
 
+\begin{flushleft}
 % Languages
 \SkillSection{Languages}
 \SkillItem{English}
@@ -150,9 +153,7 @@ CATIA V5, SolidWorks, ADAMS\\
 %\SkillItem{Mathematics}
 %Matlab, Maple\\
 \SkillItem{Programming}
-C/C++, Pyhton, Matlab, LabView, Maple, OpenCV\\
-microcontrollers: Arduino, AVR, PIC, ARM\\
-%embedded computing: Arduino \& AVR\\
+C/C++, Pyhton, Matlab, LabView, Maple, OpenCV, microcontrollers: Arduino, AVR, PIC, ARM, Assembleur ST\\
 \SkillItem{Web Development}
 HTML5, CSS3, PHP, MySQL\\
 \SkillItem{Image Editing}
@@ -179,6 +180,7 @@ First level diploma in aeronautics
 % Travels
 \SkillSection{Travels}
 Malaysia, Singapore, Togo, Netherlands, Germany, Czech Republic, Austria, Switzerland
+\end{flushleft}
 \framebreak
 
 
