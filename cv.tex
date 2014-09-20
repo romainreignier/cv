@@ -27,6 +27,7 @@
 	\setlength{\multicolsep}{0pt}
 \usepackage{paralist}										% compact lists
 \usepackage{tikz}
+\usepackage{lipsum}	
 \usepackage[francais]{babel}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -78,6 +79,13 @@
 \newcommand{\CVItem}[2]
 	{\textbf{\color{RoyalBlue} #1 - {\small\color{black}#2}}\normalsize\normalfont}
 	
+\newcommand{\SkillSection}[1]
+	{\textbf{#1}\par
+	\SmallSep\normalsize\normalfont}
+	
+\newcommand{\SkillItem}[1]
+	{\textbf{\color{RoyalBlue} #1\\}\normalsize\normalfont}
+	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Begin document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,18 +93,58 @@
 
 % Left frame
 %%%%%%%%%%%%%%%%%%%%
+% Photo
 \begin{figure}
 	\hfill
 	\includegraphics[width=0.6\columnwidth]{IMG_7936-Modifier_cv}
 	\vspace{-7cm}
 \end{figure}
 
+% Personnal Infos
 \begin{flushright}\small
 	Romain \textsc{Reignier} \\
 	\url{romain.reignier@edu.supmeca.fr}  \\
 	+33609521618 \\
 	23 years old
 \end{flushright}\normalsize
+
+% Languages
+\SkillSection{Languages}
+\SkillItem{English}
+Advanced level\\
+TOEIC : 920 points\\
+\SmallSep
+
+\SkillItem{Spanish}
+Baccalaureat level
+
+\SkillItem{German}
+Beginner
+
+%\begin{multicols}{3}
+% \begin{compactitem}[\color{RoyalBlue}$\circ$]
+% 	\item Lorem 
+% 	\item Ipsum 
+% \end{compactitem}
+%\end{multicols}
+%\SmallSep
+
+% \CVItem{Computer software}
+% \begin{multicols}{3}
+% \begin{compactitem}[\color{RoyalBlue}$\circ$]
+% 	\item Lorem 
+% 	\item Ipsum 
+% 	\item Dolor 
+% 	\item Sit 
+% 	\item Amet
+% 	\item Consectetur 
+% 	\item Adipiscing 
+% 	\item Elit
+% 	\item \ldots
+% \end{compactitem}
+% \end{multicols}
+% \Sep 
+
 \framebreak
 
 
@@ -147,32 +195,6 @@ Work with numerical machine tools in the construction workshop of French nuclear
 submarines.
 \Sep
 
-% % Skills
-% \CVSection{Skills}
-% \CVItem{Platforms}
-% \begin{multicols}{3}
-% \begin{compactitem}[\color{RoyalBlue}$\circ$]
-% 	\item Lorem 
-% 	\item Ipsum 
-% \end{compactitem}
-% \end{multicols}
-% \SmallSep
-% 
-% \CVItem{Computer software}
-% \begin{multicols}{3}
-% \begin{compactitem}[\color{RoyalBlue}$\circ$]
-% 	\item Lorem 
-% 	\item Ipsum 
-% 	\item Dolor 
-% 	\item Sit 
-% 	\item Amet
-% 	\item Consectetur 
-% 	\item Adipiscing 
-% 	\item Elit
-% 	\item \ldots
-% \end{compactitem}
-% \end{multicols}
-% \Sep 
 % 
 % \CVSection{Something other}
 % Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
