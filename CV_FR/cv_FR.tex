@@ -71,9 +71,8 @@
 \newcommand{\SmallSep}{\vspace{0.5em}}
 
 \newenvironment{AboutMe}
-	{\ignorespaces%\textbf{\color{RoyalBlue} About me}}
-}
-	{\Sep\ignorespacesafterend}
+	{\ignorespaces}%\textbf{\color{RoyalBlue} About me}}
+	{\SmallSep\ignorespacesafterend}
 	
 \newcommand{\CVSection}[1]
 	{\Large\textbf{#1}\par
@@ -86,7 +85,7 @@
 	{{\small\textbf{#1}}\normalsize\normalfont}
 	
 \newcommand{\SkillSection}[1]
-	{\small{\textbf{#1\\}}\normalfont\footnotesize}
+	{\normalsize{\textbf{#1\\}}\normalfont\small}%\footnotesize}
 	
 \newcommand{\SkillItem}[1]
 	{\textbf{\color{RoyalBlue} #1}\normalfont\\}
@@ -121,12 +120,12 @@
 % Languages
 \SkillSection{Langues}
 \SkillItem{Anglais}
-Niveau avancé (TOEIC : 920 points)\\
+Écrit et parlé (TOEIC : 920 pts)\\
 \SkillItem{Espagnol}
 Niveau Baccalauréat\\
 \SkillItem{Allemand}
 Débutant
-\Sep
+\SmallSep
 
 % Engineering
 \SkillSection{Compétences}
@@ -144,7 +143,7 @@ Systèmes asservis\\
 %Communication\\
 Vison par ordinateur\\
 Traitement d'images
-\Sep
+\SmallSep
 
 % Computer Skills
 \SkillSection{Informatique}
@@ -156,21 +155,21 @@ CATIA V5, SolidWorks, ADAMS\\
 %Matlab, Maple\\
 \SkillItem{Programmation}
 \verb!C!/\verb!C++!, Matlab, LabView, Python, Maple, OpenCV\\
-\emph{Embarqué :} Linux, ROS, Arduino, AVR, dsPIC, ARM, assembleur ST8\\
+\emph{Embarqué :} Linux, ROS, Arduino, AVR, dsPIC, ARM\\%, assembleur ST8\\
 \SkillItem{Développement Web}
 HTML5, CSS3, PHP, MySQL\\
 \SkillItem{Graphisme}
 Photoshop, Lightroom, Illustrator, Gimp, Inkscape\\
 % \SkillItem{Others}
 % MS Access, MS Project
-\Sep
+\SmallSep
 
 % Sports
 \SkillSection{Sports}
 Cyclisme \& VTT\\
 Course à pied\\
 %Swimming
-\SmallSep
+%\SmallSep
 
 % Hobbies
 \SkillSection{Loisirs}
@@ -179,7 +178,7 @@ Robotique\\
 Agriculture\\
 Mécanique\\
 Brevet d'Initiation à l'Aéronautique
-\SmallSep
+%\SmallSep
 
 % Travels
 \SkillSection{Voyages}
@@ -205,7 +204,7 @@ Malaisie, Singapour, Togo, Pays-Bas, Allemagne, République Tchèque, Autriche, 
 
 \CVItem{2013 - aujourd'hui, Université Sud Toulon Var} - \city{La Garde, PACA}\\
 Master en Physique et Sciences de l'Ingénieur, spécialité Vision et Commande.\\
-Traitement d'image, vision par ordinateur, reconnaissance de formes, trajectographie, détection, estimation.\\
+Traitement d'image, vision par ordinateur, reconnaissance de formes, trajectographie, détection, estimation.
 \SmallSep
 
 \CVItem{2012 - aujourd'hui, SUPMÉCA} - \city{La Garde, PACA}\\
@@ -225,10 +224,6 @@ Baccalauréat Scientique, spécialité Physique.
 % Experience
 \CVSection{Expériences}
 
-%\CVItem{Octobre 2014 - Février 2015}\\
-%Projet de fin d'études de Supméca : Conception d'un robot mobile pour intervention en zones radioactives en partenariat avec le CEA.
-%\SmallSep
-%
 \CVItem{Septembre 2013 - Janvier 2014, R\&D CLAAS Tractor} - \city{Vélizy, Yvelines}\\
 Stage assistant ingénieur.\\
 Travail avec l'expert climatisation sur l'amélioration du système de ventilation de la cabine K07 des tracteurs hauts de gamme.\\
