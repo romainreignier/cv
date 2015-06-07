@@ -1,9 +1,10 @@
-	%%% LaTeX Template: Designer's CV
+%%% CV de Romain REIGNIER créé grâce au template suivant :
+
+%%% LaTeX Template: Designer's CV
 %%%
 %%% Source: http://www.howtotex.com/
 %%% Feel free to distribute this template, but please keep the referal to HowToTeX.com.
 %%% Date: March 2012
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document properties and packages
@@ -32,6 +33,9 @@
 \usepackage[francais]{babel}
 \usepackage{microtype}
 
+
+\definecolor{dark_gray}{rgb}{0.3,0.3,0.3}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Create column layout
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -45,10 +49,10 @@
 	\newlength{\LeftMainSep}
 	\setlength{\LeftMainSep}{0.26\textwidth}
 	\addtolength{\LeftMainSep}{1\columnsep}
- 
+
 % small static frame for the vertical line
 \newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
- 
+
 % content of the static frame
 \begin{staticcontents}{1}
 \hfill
@@ -57,7 +61,7 @@
 	(0,0) -- (0,\textheight);}%
 \hfill\mbox{}
 \end{staticcontents}
- 
+
 % right frame
 \addtolength{\LeftMainSep}{1.5pt}
 \addtolength{\LeftMainSep}{1\columnsep}
@@ -73,20 +77,20 @@
 \newenvironment{AboutMe}
 	{\ignorespaces}%\textbf{\color{RoyalBlue} About me}}
 	{\SmallSep\ignorespacesafterend}
-	
+
 \newcommand{\CVSection}[1]
 	{\Large\textbf{#1}\par
 	\SmallSep\normalsize\normalfont}
 
-\newcommand{\CVItem}[1]
-	{\textbf{\color{RoyalBlue} #1}\normalsize\normalfont}
-	
+\newcommand{\CVItem}[2]
+	{\textbf{\color{RoyalBlue} #1 \color{dark_gray} #2}\normalsize\normalfont}
+
 \newcommand{\city}[1]
-	{{\small\textbf{#1}}\normalsize\normalfont}
-	
+	{{\small\color{dark_gray}\emph{#1}}\normalsize\normalfont}
+
 \newcommand{\SkillSection}[1]
 	{\normalsize{\textbf{#1\\}}\normalfont\small}%\footnotesize}
-	
+
 \newcommand{\SkillItem}[1]
 	{\textbf{\color{RoyalBlue} #1}\normalfont\\}
 
@@ -186,7 +190,6 @@ Malaisie, Singapour, Togo, Pays-Bas, Allemagne, République Tchèque, Autriche, 
 \end{flushleft}
 \framebreak
 
-
 % Right frame
 %%%%%%%%%%%%%%%%%%%%
 \Huge\bfseries {\color{RoyalBlue} Romain \textsc{Reignier}} \\
@@ -202,21 +205,21 @@ Malaisie, Singapour, Togo, Pays-Bas, Allemagne, République Tchèque, Autriche, 
 % Formation
 \CVSection{Formation}
 
-\CVItem{2013 - aujourd'hui, Université Sud Toulon Var} - \city{La Garde, PACA}\\
+\CVItem{2013 - aujourd'hui,}{Université Sud Toulon Var} - \city{La Garde, PACA}\\
 Master en Physique et Sciences de l'Ingénieur, spécialité Vision et Commande.\\
 Traitement d'image, vision par ordinateur, reconnaissance de formes, trajectographie, détection, estimation.
 \SmallSep
 
-\CVItem{2012 - aujourd'hui, SUPMÉCA} - \city{La Garde, PACA}\\
+\CVItem{2012 - aujourd'hui,}{SUPMÉCA} - \city{La Garde, PACA}\\
 École d'ingénieurs généraliste à dominante mécanique avec parcours Robotique et Systèmes Mécatroniques.
 \SmallSep
 
-\CVItem{2009 - 2012, CPGE Victor Hugo} - \city{Caen, Normandie}\\
+\CVItem{2009 - 2012,}{CPGE Victor Hugo} - \city{Caen, Normandie}\\
 Physique et Sciences de l'Ingénieur (PSI).\\
 Classes préparatoires aux concours d'entrée aux Grandes Écoles.
 \SmallSep
 
-\CVItem{2006 - 2009, Lycée Henri Cornat} - \city{Valognes, Normandie}\\
+\CVItem{2006 - 2009,}{Lycée Henri Cornat} - \city{Valognes, Normandie}\\
 Baccalauréat Scientique, spécialité Physique.
 %With Honors.
 \Sep
@@ -224,84 +227,43 @@ Baccalauréat Scientique, spécialité Physique.
 % Experience
 \CVSection{Expériences}
 
-\CVItem{Septembre 2013 - Janvier 2014, R\&D CLAAS Tractor} - \city{Vélizy, Yvelines}\\
+\CVItem{Septembre 2013 - Janvier 2014,}{R\&D CLAAS Tractor} - \city{Vélizy, Yvelines}\\
 Stage assistant ingénieur.\\
 Travail avec l'expert climatisation sur l'amélioration du système de ventilation de la cabine K07 des tracteurs de fortes puissances.\\
 Analyse des résultats d'essais et optimisation des conduits d'air.
 \SmallSep
 
-\CVItem{Janvier 2013, DCNS} - \city{Cherbourg, Normandie}\\
+\CVItem{Janvier 2013,}{DCNS} - \city{Cherbourg, Normandie}\\
 Stage opérateur.\\
 Travail sur des machines outils à commande numérique pour la création de pièces de sous-marins nucléaires.
 \SmallSep
 
-\CVItem{De 2006 à 2012}\\
+\CVItem{De 2006 à 2012}{}\\
 Divers emplois : Deauville International Polo Club, chantier de l'EPR pour EDF, tourneur-fraiseur, ferme de polyculture-élevage\ldots
 \Sep
 
 \CVSection{Projets \& Associations}
-\CVItem{Projet de fin d'études} Conception d'un robot mobile pour intervention en zones radioactives en partenariat avec le CEA.
+\CVItem{Projet de fin d'études}{} Conception d'un robot mobile pour intervention en zones radioactives en partenariat avec le CEA.
 \SmallSep
 
-\CVItem{CRIS}
+\CVItem{CRIS}{}
 Club Robotique des élèves Ingénieurs de Supméca : conception, fabrication et programmation de robots mobiles pour participer à la coupe de France de robotique, Eurobot (3 participations).
 \SmallSep
 
-\CVItem{Supwave}
+\CVItem{Supwave}{}
 Responsable de l'électronique embarquée dans un robot voilier autonome de 4 m.
 \SmallSep
 
-\CVItem{Aérocorp}
+\CVItem{Aérocorp}{}
 Responsable de l'électronique et des actionneurs dans un avion d'aéromodélisme.
 \SmallSep
 
-\CVItem{Supméca Sans Frontières}
+\CVItem{Supméca Sans Frontières}{}
 Association humanitaire ayant pour objectif d'assainir l'eau d'un orphelinat togolais.
 \SmallSep
 
-\CVItem{Scouts et Guides de France}
+\CVItem{Scouts et Guides de France}{}
 8 ans de scoutisme. Chef d'un camp de 30 enfants en 2012 et projet humanitaire au Togo en août 2013.
-
-%\CVSection{Skills}
-% \CVItem{Platforms}
-%\begin{multicols}{3}
-% \begin{compactitem}[\color{RoyalBlue}$\circ$]
-% 	\item Lorem 
-% 	\item Ipsum 
-% \end{compactitem}
-%\end{multicols}
-%\SmallSep
-
-% \CVItem{Computer software}
-% \begin{multicols}{3}
-% \begin{compactitem}[\color{RoyalBlue}$\circ$]
-% 	\item Lorem 
-% 	\item Ipsum 
-% 	\item Dolor 
-% 	\item Sit 
-% 	\item Amet
-% 	\item Consectetur 
-% 	\item Adipiscing 
-% 	\item Elit
-% 	\item \ldots
-% \end{compactitem}
-% \end{multicols}
-% \Sep 
-% 
-% \CVSection{Something other}
-% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
-% 
-% \clearpage
-% \framebreak
-% \framebreak
-% 
-% \CVSection{Something else}
-% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
-% \Sep
-% 
-% % References
-% \CVSection{References}
-% References upon request.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % End document
