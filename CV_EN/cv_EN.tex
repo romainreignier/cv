@@ -32,6 +32,8 @@
 \usepackage[english]{babel}
 \usepackage{microtype}
 
+\definecolor{dark_gray}{rgb}{0.3,0.3,0.3}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Create column layout
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -45,10 +47,10 @@
 	\newlength{\LeftMainSep}
 	\setlength{\LeftMainSep}{0.26\textwidth}
 	\addtolength{\LeftMainSep}{1\columnsep}
- 
+
 % small static frame for the vertical line
 \newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
- 
+
 % content of the static frame
 \begin{staticcontents}{1}
 \hfill
@@ -57,7 +59,7 @@
 	(0,0) -- (0,\textheight);}%
 \hfill\mbox{}
 \end{staticcontents}
- 
+
 % right frame
 \addtolength{\LeftMainSep}{1.5pt}
 \addtolength{\LeftMainSep}{1\columnsep}
@@ -74,20 +76,20 @@
 	{\ignorespaces%\textbf{\color{RoyalBlue} About me}}
 }
 	{\Sep\ignorespacesafterend}
-	
+
 \newcommand{\CVSection}[1]
 	{\Large\textbf{#1}\par
 	\SmallSep\normalsize\normalfont}
 
-\newcommand{\CVItem}[1]
-	{\textbf{\color{RoyalBlue} #1}\normalsize\normalfont}
-	
+\newcommand{\CVItem}[2]
+	{\textbf{\color{RoyalBlue} #1 \color{dark_gray} #2}\normalsize\normalfont}
+
 \newcommand{\city}[1]
-	{{\small\textbf{#1}}\normalsize\normalfont}
-	
+	{{\small\color{dark_gray}\emph{#1}}\normalsize\normalfont}
+
 \newcommand{\SkillSection}[1]
 	{\normalsize{\textbf{#1\\}}\normalfont\small}%\footnotesize}
-	
+
 \newcommand{\SkillItem}[1]
 	{\textbf{\color{RoyalBlue} #1}\normalfont\\}
 
@@ -108,11 +110,10 @@
 % Personnal Infos
 \begin{flushright}\small
 	%Romain \textsc{Reignier} \\
-	Avenue Georges Pompidou\\
-	Esterel 1 - Appt 119\\
-	83160 La Valette du Var\\
+	117 rue de la République\\
+	30290 Laudun l'Ardoise\\
 	France\\
-	{\footnotesize\href{mailto:romain.reignier@edu.supmeca.fr}{\nolinkurl{romain.reignier@edu.supmeca.fr}}}\\
+	{\href{mailto:rom.reignier@gmail.com}{\nolinkurl{rom.reignier@gmail.com}}}\\
 	+33 6 09 52 16 18\\
 	23 years old
 \end{flushright}%\normalsize
@@ -125,7 +126,7 @@ Advanced level (TOEIC: 920 pts)\\
 \SkillItem{Spanish}
 Baccalaureat level\\
 \SkillItem{German}
-Beginner
+Basic
 \SmallSep
 
 % Engineering
@@ -136,170 +137,135 @@ Design of Systems\\
 Resistance of the materials\\
 %Materials\\
 Digital methods\\
-Algorithmic\\
+%Algorithmic\\
 %Database\\
 %Thermal transferts\\
 Automatics\\
 Servo-systems\\
+Robotics\\
 %Communication\\
 Computer Vision
 \SmallSep
 
 % Computer Skills
 \SkillSection{Computer Skills}
-\SkillItem{Office Automation Programs}
-Word, Excel, PowerPoint, Access, Project, \LaTeX\\
 \SkillItem{CAD}
 CATIA V5, SolidWorks, ADAMS\\
 %\SkillItem{Mathematics}
 %Matlab, Maple\\
 \SkillItem{Programming}
-\verb!C!/\verb!C++!, Matlab, LabView, Python, Maple, OpenCV, Qt\\
-\emph{Embedded}: Linux, ROS, Arduino, AVR, PIC, ARM\\%, ST8 Assembly language\\
+\verb!C!/\verb!C++!, Python, Matlab/Simulink, LabView, Maple, OpenCV, Qt\\
+\emph{Embedded}: GNU/Linux, ROS, Arduino, AVR, PIC, ARM\\%, ST8 Assembly language\\
 \SkillItem{Web Development}
 HTML5, CSS3, PHP, MySQL\\
+\SkillItem{Office Automation Programs}
+Word, Excel (Visual Basic), PowerPoint, Access, Project, \LaTeX\\
 \SkillItem{Image Editing}
-Photoshop, Lightroom, Illustrator, Gimp, Inkscape\\
+Photoshop, Lightroom, Illustrator, Gimp, Inkscape, FinalCut Pro X\\
 \SmallSep
 
 % Sports
 \SkillSection{Sports}
-Cycling \& MTB\\
+Cycling, road \& MTB\\
 Running\\
 %Swimming
-%\SmallSep
+\SmallSep
 
 % Hobbies
 \SkillSection{Hobbies}
-Photography\\
+Robotics\\
 Electronics\\
+Mechanics\\
 Gardening / Farming\\
-General mechanics\\
-First level diploma in aeronautics
-%\SmallSep
+Photography\\
+%General mechanics\\
+First level diploma in aeronautics\SmallSep
 
 % Travels
 \SkillSection{Travels}
-Malaysia, Singapore, Togo, Netherlands, Germany, Czech Republic, Austria, Switzerland
+Malaysia, Singapore, Togo
+InterRail 2014 : Amsterdam, Berlin, Prague, Vienna, Geneva
+%Netherlands, Germany, Czech Republic, Austria, Switzerland
 \end{flushleft}
 \framebreak
 
 
 % Right frame
 %%%%%%%%%%%%%%%%%%%%
-\Huge\bfseries {\color{RoyalBlue} Romain \textsc{Reignier}} \\
-\Large\bfseries  Student in Mechanical \& Robotics Engineering\\
-
-\normalsize\normalfont
-
+%\Huge\bfseries {\color{RoyalBlue} Romain \textsc{Reignier}} \\
+\Huge\bfseries {\color{RoyalBlue} Romain REIGNIER} \\
+\Large\bfseries Mechatronics \& Robotics Engineer\\
 % About me
-\begin{AboutMe}
-\emph{Looking for an engineering instership from March 2015 to September 2015 in the agricultural machinery field.}
-\end{AboutMe}
+%\begin{AboutMe}
+%\end{AboutMe}
 
 % Education
 \CVSection{Education}
-
-\CVItem{2013 - present, University of Toulon} - \city{La Garde, PACA}\\
-Master of Sciences in Physics and Engineering Sciences, specialisation in Vision and Command.\\
-Image Processing, Vision, Detection, Pattern Recognition, Motion Planning.
-\SmallSep
-
-\CVItem{2012 - present, Supmeca Engineering School} - \city{La Garde, PACA}\\
-A selective Mechanical Engineering school with Major in Robotics and Mecatronics Systems.
+\CVItem{2012 -- 2015,}{SUPMÉCA Engineering School} -- \city{La Garde, PACA}\\
+\emph{Institut Supérieur de Mécanique de Paris} (ex CESTI)\\
+A selective Mechanical Engineering school,\\
+Major in \textbf{Robotics and Mecatronics Systems}.
 %An engineering course focusing in mechanics with Robotics and Mecatronics specialisation.
 \SmallSep
 
-\CVItem{2009 - 2012, CPGE Victor Hugo} - \city{Caen, Normandy}\\
-Physics Sciences of Engineer (PSI).\\
-Highly selective classes to prepare for the competitive exams to the Grandes Ecoles.
+\CVItem{2014 -- 2015,}{University of Toulon} -- \city{La Garde, PACA}\\
+Master of Sciences in Physics and Engineering Sciences,\\
+Specialization in \textbf{Vision and Control}.
+%Image Processing, Vision, Detection, Pattern Recognition, Motion Planning.
 \SmallSep
 
-\CVItem{2006 - 2009, Scientific Baccalaureat} - \city{Valognes, Normandy}\\
-Secondary School diploma in Sciences, specialized in Physics.
+\CVItem{2009 -- 2012,}{CPGE Victor Hugo} -- \city{Caen, Normandy}\\
+Physics Sciences of Engineer (PSI).\\
+Highly selective classes to prepare for the competitive exams\\
+to the Grandes Ecoles.
+%\SmallSep
+%\CVItem{2006 -- 2009,}{Scientific Baccalaureat} -- \city{Valognes, Normandy}\\
+%Secondary School diploma in Sciences, specialized in Physics.
 %With Honors.
 \Sep
 
 % Experience
 \CVSection{Experience}
-\CVItem{September 2013 - January 2014, R\&D CLAAS Tractor} - \city{Vélizy, Yvelines}\\
+\CVItem{March 2015 -- August 2015,}{CEA} -- \city{Marcoule, Languedoc-Rousillon}\\
+Engineer internship.\\
+Implementation of ROS and the Gazebo simulator on a hexapod robot. Developpment of a new gait for uneven terrain to be used in nuclear dismantling.\SmallSep
+
+\CVItem{September 2013 -- January 2014,}{R\&D CLAAS Tractor} -- \city{Vélizy, Île-de-France}\\
 Assistant engineer internship.\\
-Work with the HVAC expert on the project to improve the AC of the K07 cabin.
-Analysis of data from simulations and tests.
+Work with the HVAC expert on the project to improve the AC in the cabin of the high end tractors.
+Analysis of data from simulations and tests then design optimizations.
 \SmallSep
 
-\CVItem{January 2013, DCNS} - \city{Cherbourg, Normandy}\\
+\CVItem{January 2013,}{DCNS} -- \city{Cherbourg, Normandy}\\
 Operator internship.\\
 Work with numerical machine tools in the construction workshop of French nuclear
 submarines.
 \SmallSep
 
-\CVItem{From 2006 to 2012}\\
-Various jobs: Deauville International Polo Club, Électricité de France (EDF), machining operations, farming\ldots
+\CVItem{2006 -- 2012}{}\\
+Various jobs: Deauville International Polo Club, EPR construction site for Électricité de France, appliances maintenance, machining operations, farming.
 \Sep
 
 \CVSection{Projects \& Associations}
-\CVItem{CRIS}\\
-The robotics club of Supmeca: conception, building and programmation of
-robots for the national contest: Eurobot (3 entries). %Score of 41 and 81 in 2012 and 2013
+\CVItem{3rd year project}{}Design study of a mobile manipulator robot for nuclear sanitation in partnership with the CEA.\\
+Sensors implementation in a vacuum cleaner to monitor the energy consumption on an Android app via Bluetooth Low Energy for the LISSMA laboratory.\SmallSep
+
+\CVItem{2nd year project}{}Upgrade of a pneumatic PLC installation. Mechanics and Grafcet \& Ladder programming.
 \SmallSep
 
-\CVItem{Supwave}\\
-Responsible of the electronics in an autonomous sailboat.
+\CVItem{Robotics club of Supmeca}{}Conception, making and programming of robots for French Robotics Cup (Eurobot) 2013, 2014 and 2015.
 \SmallSep
 
-\CVItem{Aerocorp}
-Responsible of the internal electronics and actuators of a radio-controlled model aircraft.
+\CVItem{Supwave}{}Supervisor of the electronics in an autonomous sailboat.
 \SmallSep
 
-\CVItem{Supmeca Sans Frontières}\\
-Humanitarian association which has the aim of bringing water to a Togolese orphanage.
+\CVItem{Aerocorp}{}Manager for the electronics of a radio-controlled model aircraft.\SmallSep
+
+\CVItem{Supmeca Sans Frontières}{}Humanitarian association which has the aim of bringing water to a Togolese orphanage.
 \SmallSep
 
-\CVItem{Scouts et Guides de France}\\
-Boyscout for 8 years.\\
+\CVItem{Scouts et Guides de France}{}Boyscout for 8 years.
 Chief on a summer camp in 2012 and Humanitarian project in Togo in August 2013.
-
-%\CVSection{Skills}
-% \CVItem{Platforms}
-%\begin{multicols}{3}
-% \begin{compactitem}[\color{RoyalBlue}$\circ$]
-% 	\item Lorem 
-% 	\item Ipsum 
-% \end{compactitem}
-%\end{multicols}
-%\SmallSep
-
-% \CVItem{Computer software}
-% \begin{multicols}{3}
-% \begin{compactitem}[\color{RoyalBlue}$\circ$]
-% 	\item Lorem 
-% 	\item Ipsum 
-% 	\item Dolor 
-% 	\item Sit 
-% 	\item Amet
-% 	\item Consectetur 
-% 	\item Adipiscing 
-% 	\item Elit
-% 	\item \ldots
-% \end{compactitem}
-% \end{multicols}
-% \Sep 
-% 
-% \CVSection{Something other}
-% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
-% 
-% \clearpage
-% \framebreak
-% \framebreak
-% 
-% \CVSection{Something else}
-% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
-% \Sep
-% 
-% % References
-% \CVSection{References}
-% References upon request.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % End document
