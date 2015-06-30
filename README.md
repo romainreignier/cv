@@ -1,2 +1,2 @@
-# My CV
-I'm looking for an internship so I have to make my CV.
+# My Curriculum Vitae
+I'm looking for a job so this is my CV.
