@@ -12,27 +12,26 @@
 \documentclass[a4paper,11pt,final]{memoir}
 
 % misc
-\renewcommand{\familydefault}{bch}	% font
-\pagestyle{empty}					% no pagenumbering
-\setlength{\parindent}{0pt}			% no paragraph indentation
+\renewcommand{\familydefault}{bch} % font
+\pagestyle{empty}					         % no pagenumbering
+\setlength{\parindent}{0pt}			   % no paragraph indentation
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 % required packages (add your own)
-\usepackage{flowfram}										% column layout
+\usepackage{flowfram}										 % column layout
 \usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry}% margins
-\usepackage{graphicx}										% figures
-\usepackage{url}											% URLs
-\usepackage[usenames,dvipsnames]{xcolor}					% color
-\usepackage{multicol}										% columns env.
+\usepackage{graphicx}										 % figures
+\usepackage{url}											   % URLs
+\usepackage[usenames,dvipsnames]{xcolor} % color
+\usepackage{multicol}										 % columns env.
 	\setlength{\multicolsep}{0pt}
-\usepackage{paralist}										% compact lists
+\usepackage{paralist}										 % compact lists
 \usepackage{tikz}
 \usepackage{hyperref}
 \hypersetup{colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black} % pour mettre les liens en noirs, sans cadre
 \usepackage[francais]{babel}
 \usepackage{microtype}
-
 
 \definecolor{dark_gray}{rgb}{0.3,0.3,0.3}
 
@@ -66,7 +65,6 @@
 \addtolength{\LeftMainSep}{1.5pt}
 \addtolength{\LeftMainSep}{1\columnsep}
 \newflowframe{0.68\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % define macros (for convience)
@@ -127,147 +125,143 @@
 \SkillItem{Espagnol}
 Niveau Baccalauréat\\
 \SkillItem{Allemand}
-Débutant
+Notions
 \SmallSep
 
 % Engineering
 \SkillSection{Compétences}
-Mécanique\\
-Conception de systèmes\\
+Conception mécanique\\
+%Conception de systèmes\\
 %Analyse des mécanismes\\
 Résistance des matériaux\\
 %Materials\\
 Méthodes numériques\\
-Algorithmique\\
+%Algorithmique\\
 %Database\\
 %Thermal transferts\\
 Automatique\\
 Systèmes asservis\\
+Robotique\\
 %Communication\\
-Vison par ordinateur\\
-Traitement d'images
+%Vison par ordinateur\\
+Traitement d'image
 \SmallSep
 
 % Computer Skills
 \SkillSection{Informatique}
-\SkillItem{Bureautique}
-Word, Excel, PowerPoint, Access, Project, \LaTeX\\
 \SkillItem{CAO}
 CATIA V5, SolidWorks, ADAMS\\
-%\SkillItem{Mathematics}
-%Matlab, Maple\\
 \SkillItem{Programmation}
-\verb!C!/\verb!C++!, Matlab, LabView, Python, Maple, OpenCV, Qt\\
-\emph{Embarqué :} Linux, ROS, Arduino, AVR, dsPIC, ARM\\%, assembleur ST8\\
+\verb!C!/\verb!C++!, Python, Matlab/Simulink, LabView, Maple, OpenCV, Qt\\
+\emph{Embarqué :} GNU/Linux, ROS, Arduino, AVR, dsPIC, ARM\\%, assembleur ST8\\
 \SkillItem{Développement Web}
 HTML5, CSS3, PHP, MySQL\\
+\SkillItem{Bureautique}
+Word, Excel (Visual Basic), PowerPoint, Access, Project, \LaTeX\\
 \SkillItem{Graphisme}
-Photoshop, Lightroom, Illustrator, Gimp, Inkscape\\
-% \SkillItem{Others}
-% MS Access, MS Project
+Photoshop, Lightroom, Illustrator, Gimp, Inkscape, FinalCut Pro X\\
 \SmallSep
 
 % Sports
 \SkillSection{Sports}
-Cyclisme \& VTT\\
+Cyclisme route \& VTT\\
 Course à pied\\
 %Swimming
-%\SmallSep
+\SmallSep
 
 % Hobbies
 \SkillSection{Loisirs}
-Photographie\\
 Robotique\\
-Agriculture\\
 Mécanique\\
+Machinisme Agricole\\
+Agriculture\\
+Photographie\\
 Brevet d'Initiation à l'Aéronautique
-%\SmallSep
+\SmallSep
 
 % Travels
 \SkillSection{Voyages}
-Malaisie, Singapour, Togo, Pays-Bas, Allemagne, République Tchèque, Autriche, Suisse
+Malaisie, Singapour, Togo\\
+InterRail 2014 : Amsterdam, Berlin, Prague, Vienne, Genève
+%Pays-Bas, Allemagne, République Tchèque, Autriche, Suisse
 \end{flushleft}
 \framebreak
 
 % Right frame
 %%%%%%%%%%%%%%%%%%%%
-\Huge\bfseries {\color{RoyalBlue} Romain \textsc{Reignier}} \\
-\Large\bfseries  Ingénieur en mécatronique et robotique\\
-
-\normalsize\normalfont
-
+%\Huge\bfseries {\color{RoyalBlue} Romain \textsc{Reignier}} \\
+\Huge\bfseries {\color{RoyalBlue} Romain REIGNIER} \\
+\Large\bfseries  Ingénieur Mécatronique et Robotique\\
 % About me
-\begin{AboutMe}
-%\emph{Recherche un stage ingénieur de mars 2015 à septembre 2015 en mécatronique.}
-\end{AboutMe}
+%\begin{AboutMe}
+%\end{AboutMe}
 
 % Formation
 \CVSection{Formation}
 
-\CVItem{2013 - 2015,}{Université Sud Toulon Var} - \city{La Garde, PACA}\\
-Master en Physique et Sciences de l'Ingénieur, spécialité Vision et Commande.\\
-Traitement d'image, vision par ordinateur, reconnaissance de formes, trajectographie, détection, estimation.
+\CVItem{2012 -- 2015,}{SUPMÉCA} - \city{La Garde, PACA}\\
+\emph{Institut Supérieur de Mécanique de Paris} (ex CESTI)\\
+École d'ingénieurs généraliste à dominante mécanique, \\parcours \textbf{Robotique et Systèmes Mécatroniques}.
 \SmallSep
 
-\CVItem{2012 - 2015,}{SUPMÉCA} - \city{La Garde, PACA}\\
-École d'ingénieurs généraliste à dominante mécanique avec parcours Robotique et Systèmes Mécatroniques.
+\CVItem{2014 -- 2015,}{Université Sud Toulon Var} - \city{La Garde, PACA}\\
+Master recherche Physique et Sciences de l'Ingénieur,\\ spécialité \textbf{Vision Commande}.
+%Traitement d'image, vision par ordinateur, reconnaissance de formes, trajectographie, détection, estimation.
 \SmallSep
 
-\CVItem{2009 - 2012,}{CPGE Victor Hugo} - \city{Caen, Normandie}\\
-Physique et Sciences de l'Ingénieur (PSI).\\
-Classes préparatoires aux concours d'entrée aux Grandes Écoles.
-\SmallSep
+\CVItem{2009 -- 2012,}{CPGE Victor Hugo} - \city{Caen, Normandie}\\
+Classes Préparatoires aux concours d'entrée aux Grandes Écoles.\\
+Physique et Sciences de l'Ingénieur (PSI).
+%\SmallSep
 
-\CVItem{2006 - 2009,}{Lycée Henri Cornat} - \city{Valognes, Normandie}\\
-Baccalauréat Scientique, spécialité Physique.
+%\CVItem{2006 -- 2009,}{Lycée Henri Cornat} - \city{Valognes, Normandie}\\
+%Baccalauréat Scientique, spécialité Physique.
 %With Honors.
 \Sep
-
 % Experience
 \CVSection{Expériences}
 
-\CVItem{Mars 2015 - Août 2015,}{CEA} - \city{Marcoule, Languedoc-Roussillon}\\
-Stage de fin d'études ingénieur.\\
-Implémentation de ROS sur un robot hexapode et développement d'une nouvelle démarche pour le fanchissement de terrains irréguliers.
+\CVItem{Mars 2015 -- Août 2015,}{CEA} - \city{Marcoule, Languedoc-Roussillon}\\
+Stage ingénieur.\\
+Implémentation de ROS et du simulateur Gazebo sur un robot hexapode suivi d'un développement d'une nouvelle démarche pour le fanchissement de terrains irréguliers en vue d'une application dans le démantèlement.
 \SmallSep
 
-\CVItem{Septembre 2013 - Janvier 2014,}{R\&D CLAAS Tractor} - \city{Vélizy, Yvelines}\\
+\CVItem{Septembre 2013 -- Janvier 2014,}{R\&D CLAAS Tractor} - \city{Vélizy, Île-de-France}\\
 Stage assistant ingénieur.\\
-Travail avec l'expert climatisation sur l'amélioration du système de ventilation de la cabine K07 des tracteurs de fortes puissances.\\
-Analyse des résultats d'essais et optimisation des conduits d'air.
+Support à l'expert climatisation sur l'amélioration du système de ventilation de la cabine des tracteurs de fortes puissances.\\
+Analyse des résultats de simulations et essais puis optimisation des conduits.
 \SmallSep
 
 \CVItem{Janvier 2013,}{DCNS} - \city{Cherbourg, Normandie}\\
 Stage opérateur.\\
-Travail sur des machines outils à commande numérique pour la création de pièces de sous-marins nucléaires.
+Travail sur des machines outils à commande numérique (tours, fraiseuses et alèseuses) pour la création de pièces de sécurité de sous-marins nucléaires.
 \SmallSep
 
-\CVItem{De 2006 à 2012}{}\\
-Divers emplois : Deauville International Polo Club, chantier de l'EPR pour EDF, tourneur-fraiseur, ferme de polyculture-élevage\ldots
+\CVItem{2006 -- 2012}{}\\
+Emplois saisonniers : Deauville Polo Club, chantier de l'EPR pour EDF, tourneur-fraiseur, maintenance électroménager, ferme de polyculture-élevage.
 \Sep
 
 \CVSection{Projets \& Associations}
-\CVItem{Projet de fin d'études}{} Conception d'un robot mobile pour intervention en zones radioactives en partenariat avec le CEA.
+\CVItem{Projets de 3\ieme{} année}{}Étude conceptuelle d'un robot manipulateur mobile pour l'assainissement en milieu nucléaire en partenariat avec le CEA.\\
+Instrumentation d'un aspirateur avec suivi de la consommation sur une application Android via Bluetooth Low Energy pour le laboratoire LISMMA.
 \SmallSep
 
-\CVItem{CRIS}{}
-Club Robotique des élèves Ingénieurs de Supméca : conception, fabrication et programmation de robots mobiles pour participer à la coupe de France de robotique, Eurobot (3 participations).
+\CVItem{Projet de 2\ieme{} année}{}Restauration d'une chaîne d'automates programmables pneumatiques. Mécanique et programmation en Grafcet et Ladder.
 \SmallSep
 
-\CVItem{Supwave}{}
-Responsable de l'électronique embarquée dans un robot voilier autonome de 4 m.
+\CVItem{Club Robotique de Supméca}{}Conception, fabrication et programmation de robots pour la Coupe de France de robotique (Eurobot) 2013, 2014 et 2015.
 \SmallSep
 
-\CVItem{Aérocorp}{}
-Responsable de l'électronique et des actionneurs dans un avion d'aéromodélisme.
+\CVItem{Supwave}{}Responsable de l'électronique embarquée sur un voilier autonome.
 \SmallSep
 
-\CVItem{Supméca Sans Frontières}{}
-Association humanitaire ayant pour objectif d'assainir l'eau d'un orphelinat togolais.
+\CVItem{Aérocorp}{}Responsable de l'électronique dans un avion d'aéromodélisme.
 \SmallSep
 
-\CVItem{Scouts et Guides de France}{}
-8 ans de scoutisme. Chef d'un camp de 30 enfants en 2012 et projet humanitaire au Togo en août 2013.
+\CVItem{Supméca Sans Frontières}{}Association humanitaire avec l'objectif d'assainir l'eau d'un orphelinat togolais. Gestion de projet, organisation d'évènements.
+\SmallSep
+
+\CVItem{Scouts et Guides de France}{}8 ans de scoutisme. Chef d'un camp de 30 enfants en 2012 et projet humanitaire d'un mois au Togo en août 2013.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % End document
