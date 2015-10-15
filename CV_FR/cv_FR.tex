@@ -31,7 +31,6 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black} % pour mettre les liens en noirs, sans cadre
 \usepackage[francais]{babel}
-\usepackage{microtype}
 
 \definecolor{dark_gray}{rgb}{0.3,0.3,0.3}
 
@@ -69,7 +68,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % define macros (for convience)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\Sep}{\vspace{1.5em}}
+\newcommand{\Sep}{\vspace{1.3em}}
 \newcommand{\SmallSep}{\vspace{0.5em}}
 
 \newenvironment{AboutMe}
@@ -90,7 +89,7 @@
 	{\normalsize{\textbf{#1\\}}\normalfont\small}%\footnotesize}
 
 \newcommand{\SkillItem}[1]
-	{\textbf{\color{RoyalBlue} #1}\normalfont\\}
+{\vspace{0.25em}\textbf{\color{RoyalBlue} #1}\normalfont}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Begin document
@@ -119,29 +118,21 @@
 \end{flushright}%\normalsize
 
 \begin{flushleft}
-% Languages
-\SkillSection{Langues}
-\SkillItem{Anglais}
-Écrit et parlé (TOEIC : 920 pts)\\
-\SkillItem{Espagnol}
-Niveau Baccalauréat\\
-\SkillItem{Allemand}
-Notions
-\SmallSep
-
 % Engineering
 \SkillSection{Compétences}
 Conception mécanique\\
+CAO \& FAO\\
+Résistance des matériaux\\
+Électronique\\
 %Conception de systèmes\\
 %Analyse des mécanismes\\
-Résistance des matériaux\\
 %Materials\\
 Méthodes numériques\\
 %Algorithmique\\
 %Database\\
 %Thermal transferts\\
 Automatique\\
-Systèmes asservis\\
+%Systèmes asservis\\
 Robotique\\
 %Communication\\
 %Vison par ordinateur\\
@@ -150,17 +141,28 @@ Traitement d'image
 
 % Computer Skills
 \SkillSection{Informatique}
-\SkillItem{CAO}
+\vspace{-0.25em}
+\SkillItem{Programmation}\\
+%\verb!C!, \verb!C++!, Python, Matlab/Simulink, LabView, Java, OpenCV, Qt\\ %Maple
+C, C++, Python, Matlab, Simulink, LabView, Java, OpenCV, Qt, Git\\ %Maple
+\SkillItem{Embarqué}\\
+Robot Operating System (ROS), GNU/Linux (Kernel driver, Yocto, Buildroot), Arduino, AVR, dsPIC, ARM, mbed\\%, assembleur ST8\\
+\SkillItem{CAO}\\
 CATIA V5, SolidWorks, ADAMS\\
-\SkillItem{Programmation}
-\verb!C!/\verb!C++!, Python, Matlab/Simulink, LabView, Maple, OpenCV, Qt\\
-\emph{Embarqué :} GNU/Linux, ROS, Arduino, AVR, dsPIC, ARM\\%, assembleur ST8\\
-\SkillItem{Développement Web}
+\SkillItem{Développement Web}\\
 HTML5, CSS3, PHP, MySQL\\
-\SkillItem{Bureautique}
-Word, Excel (Visual Basic), PowerPoint, Access, Project, \LaTeX\\
-\SkillItem{Graphisme}
-Photoshop, Lightroom, Illustrator, Gimp, Inkscape, FinalCut Pro X\\
+\SkillItem{Bureautique}\\
+Word, Excel (Visual Basic), PowerPoint, Access, Project, \LaTeX
+%%\SkillItem{Graphisme}\\
+%%Photoshop, Lightroom, Illustrator, Gimp, Inkscape, FinalCut Pro X\\
+\SmallSep
+
+% Languages
+\SkillSection{Langues}
+\vspace{-0.25em}
+\SkillItem{Anglais} : Écrit et parlé\\(TOEIC : 920 pts)\\
+\SkillItem{Espagnol} : Niveau Baccalauréat\\
+\SkillItem{Allemand} : Notions
 \SmallSep
 
 % Sports
@@ -172,11 +174,12 @@ Course à pied\\
 \SmallSep
 
 % Hobbies
-\SkillSection{Loisirs}
+%\SkillSection{Loisirs}
+\SkillSection{Passions}
 Robotique\\
 Mécanique\\
 Machinisme Agricole\\
-Agriculture\\
+%Agriculture\\
 Photographie\\
 Brevet d'Initiation à l'Aéronautique
 \SmallSep
@@ -203,25 +206,25 @@ InterRail 2014 : Amsterdam, Berlin, Prague, Vienne, Genève
 \CVSection{Expériences}
 
 \CVItem{Mars 2015 -- Août 2015,}{CEA} -- \city{Marcoule, Languedoc-Roussillon}\\
-Stage ingénieur : Implémentation de ROS et du simulateur Gazebo sur un robot hexapode suivi d'un développement d'une nouvelle démarche pour le fanchissement d'obstacles en vue d'une application dans le démantèlement.
+Stage ingénieur : Implémentation de ROS et du simulateur Gazebo sur un robot hexapode suivi d'un développement en C++ d'une nouvelle démarche pour le franchissement d'obstacles en vue d'une application d'investigation dans le démantèlement nucléaire.
 \SmallSep
 
-\CVItem{Octobre 2014 -- Février 2015}{SUPMÉCA} -- \city{La Garde, PACA}\\
-Projets de 3\ieme{} année : Étude conceptuelle d'un robot manipulateur mobile pour l'assainissement en milieu nucléaire en partenariat avec le CEA.\\
-Instrumentation d'un aspirateur avec suivi de la consommation sur une application Android via Bluetooth Low Energy pour le laboratoire LISMMA.
+\CVItem{Octobre 2014 -- Février 2015}{Supméca} -- \city{La Garde, PACA}\\
+Projets de 3\ieme{} année :\\
+-- Étude conceptuelle d'un robot manipulateur mobile pour l'assainissement en milieu nucléaire en partenariat avec le CEA.\\
+-- Instrumentation d'un aspirateur avec suivi de la consommation sur une application Android via Bluetooth Low Energy pour le laboratoire LISMMA.
 \SmallSep
 
-\CVItem{Avril 2014 -- Juin 2014}{SUPMÉCA} -- \city{La Garde, PACA}\\
+\CVItem{Avril 2014 -- Juin 2014}{Supméca} -- \city{La Garde, PACA}\\
 Projet de 2\ieme{} année : Restauration d'une chaîne d'automates programmables pneumatiques. Mécanique et programmation en Grafcet et Ladder.
 \SmallSep
 
 \CVItem{Septembre 2013 -- Janvier 2014,}{R\&D CLAAS Tractor} -- \city{Vélizy, Île-de-France}\\
-Stage assistant ingénieur : Support à l'expert climatisation sur l'amélioration du système de ventilation de la cabine des tracteurs de fortes puissances.\\
-Analyse des résultats de simulations et essais puis optimisation des conduits.
+Stage assistant ingénieur : Support à l'expert climatisation sur l'amélioration du système de ventilation de la cabine des tracteurs. Analyse des résultats de simulations et essais puis optimisation et industrialisation des conduits.
 \SmallSep
 
 \CVItem{Janvier 2013,}{DCNS} -- \city{Cherbourg, Normandie}\\
-Stage opérateur : Travail sur des machines outils à commande numérique (tours, fraiseuses et alèseuses) pour la création de pièces de sécurité de sous-marins nucléaires.
+Stage opérateur : Travail sur des machines outils à commande numérique (tours, fraiseuses et aléseuses) pour la création de pièces de sécurité de sous-marins nucléaires.
 \SmallSep
 
 \CVItem{2006 -- 2012}{}\\
@@ -232,10 +235,7 @@ Emplois saisonniers : Deauville Polo Club, chantier de l'EPR pour EDF, tourneur-
 \CVItem{Club Robotique de Supméca}{}Conception, fabrication et programmation de robots pour la Coupe de France de robotique (Eurobot) 2013, 2014 et 2015.
 \SmallSep
 
-\CVItem{Supwave}{}Responsable de l'électronique embarquée sur un voilier autonome.
-\SmallSep
-
-\CVItem{Aérocorp}{}Responsable de l'électronique dans un avion d'aéromodélisme.
+\CVItem{Supwave et Aérocorp}{}Responsable de l'électronique embarquée sur un voilier autonome et un avion d'aéromodélisme.
 \SmallSep
 
 \CVItem{Supméca Sans Frontières}{}Association humanitaire avec l'objectif d'assainir l'eau d'un orphelinat togolais. Gestion de projet, organisation d'évènements.
@@ -247,7 +247,7 @@ Emplois saisonniers : Deauville Polo Club, chantier de l'EPR pour EDF, tourneur-
 % Formation
 \CVSection{Formation}
 
-\CVItem{2012 -- 2015,}{SUPMÉCA} -- \city{La Garde, PACA}\\
+\CVItem{2012 -- 2015,}{Supméca} -- \city{La Garde, PACA}\\
 \emph{Institut Supérieur de Mécanique de Paris} (ex CESTI)\\
 École d'ingénieurs généraliste à dominante mécanique, \\parcours \textbf{Robotique et Systèmes Mécatroniques}.
 \SmallSep
@@ -258,8 +258,7 @@ Master recherche Physique et Sciences de l'Ingénieur,\\ spécialité \textbf{Vi
 \SmallSep
 
 \CVItem{2009 -- 2012,}{CPGE Victor Hugo} -- \city{Caen, Normandie}\\
-Classes Préparatoires aux concours d'entrée aux Grandes Écoles.\\
-Physique et Sciences de l'Ingénieur (PSI).
+Classes Préparatoires aux Grandes Écoles, Physique et Sciences de l'Ingénieur.
 %\SmallSep
 
 %\CVItem{2006 -- 2009,}{Lycée Henri Cornat} - \city{Valognes, Normandie}\\
